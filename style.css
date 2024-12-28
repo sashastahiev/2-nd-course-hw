@@ -50,6 +50,10 @@
   margin-bottom: 48px;
 }
 
+.play-game {
+  display: none;
+}
+
 .cap__btn-go {
   width: 247px;
   height: 66px;
@@ -110,6 +114,10 @@
   bottom: 225px;
 }
 
+.star-6 {
+  display: none;
+}
+
 .Big-star {
   position: absolute;
   width: 1074px;
@@ -145,8 +153,8 @@
   margin-top: 24px;
 }
 .games__carts {
-  width: 1201px;
-  height: 978px;
+  width: 100%;
+  height: 1088px;
   margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
@@ -156,22 +164,20 @@
 .content {
   background-image: url("image/background-content.png");
   width: 100%;
-  height: 1564px;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .block {
-  width: 378px;
-  height: 1056px;
+  width: 375px;
+  height: 1088px;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
 }
 
 .cart {
-  position: relative;
   width: 378px;
   height: 473px;
   border-radius: 30px;
@@ -185,17 +191,18 @@
   height: 512px;
 }
 .cart__img {
-  position: absolute;
-  width: 100%;
-  height: 314px;
+  width: 378px;
+  height: auto;
 }
 .cart__description {
-  position: absolute;
-  bottom: 0;
   box-sizing: border-box;
   width: 100%;
   height: 159px;
   padding: 32px 32px 36px 32px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .cart:hover {
@@ -226,6 +233,11 @@
   font-weight: 700;
   line-height: 39px;
   margin-top: 16px;
+  text-decoration: none;
+}
+
+.description-mobile {
+  display: none;
 }
 
 .description-big {
@@ -238,4 +250,161 @@
 
 .link-to-game {
   cursor: pointer;
+}
+
+.games__title-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Big-star {
+    display: none;
+  }
+  .top {
+    width: 100vw;
+    height: 700px;
+  }
+  .header {
+    position: relative;
+    width: 375px;
+    height: 700px;
+    margin-left: calc(50% - 187.5px);
+    margin-right: calc(50% - 187.5px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .star-1, .star-2, .star-3, .star-4, .star-5 {
+    display: none;
+  }
+  .description__game-count {
+    display: none;
+  }
+  .header__cap {
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 343px;
+    height: 371px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cap__title {
+    width: 296px;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .cap__subtitle {
+    width: 296px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+  .cap__btn-go {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .games {
+    width: 375px;
+    height: 100vh;
+    margin-left: calc(50% - 187.5px);
+    margin-right: calc(50% - 187.5px);
+    padding-top: 48px;
+  }
+  .games__description {
+    display: none;
+  }
+  .games__carts {
+    width: 375px;
+    margin-bottom: 24px;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .games__title {
+    display: none;
+  }
+  .games__title-mobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .cart {
+    width: 343px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .cart-2, .cart-4 {
+    margin-bottom: 0;
+  }
+  .cart__img {
+    width: 343px;
+    height: 284.93px;
+  }
+  .cart__description {
+    width: 343px;
+    height: auto;
+    position: relative;
+  }
+  .play-game {
+    display: block;
+    width: 280px;
+    height: 55px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 28px 16px 28px;
+  }
+  .description-mobile {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 28px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .description-big {
+    height: auto;
+  }
+  .description__title {
+    width: 284.93px;
+    height: auto;
+    text-decoration: none;
+    margin-top: 0;
+  }
+  .block {
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content {
+    height: 4000px;
+  }
 }/*# sourceMappingURL=style.css.map */

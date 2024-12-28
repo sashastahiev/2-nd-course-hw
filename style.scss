@@ -45,6 +45,9 @@
     margin-top: 24px;
     margin-bottom: 48px;
 }
+.play-game{
+    display: none;
+}
 .cap__btn-go{
     width: 247px;
     height: 66px;
@@ -99,6 +102,9 @@
     left: 948px;
     bottom: 225px;
 }
+.star-6{
+    display: none;
+}
 .Big-star{
     position: absolute;
     width: 1074px;
@@ -132,8 +138,8 @@
         margin-top: 24px;
     }
     &__carts{
-        width: 1201px;
-        height: 978px;
+        width: 100%;
+        height: 1088px;
         margin-top: 72px;
         display: flex;
         flex-wrap: wrap;
@@ -143,44 +149,43 @@
 .content{
     background-image: url("image/background-content.png");
     width: 100%;
-    height: 1564px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .block{
-    width: 378px;
-    height: 1056px;
+    width: 375px;
+    height: 1088px;
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    
 }
 .cart{
-    position: relative;
     width: 378px;
     height: 473px;
     border-radius: 30px;
     background-color: white;
     transition: all 0.3s;
     &-2, &-6{
-        height: 551px;
+        height:  551px;
     }
     &-3, &-4{
         height: 512px;
     }
     &__img{
-        position: absolute;
-        width: 100%;
-        height: 314px;
+        width: 378px;
+        height: auto;
     }
     &__description{
-        position: absolute;
-        bottom:0;
         box-sizing: border-box;
         width: 100%;
         height: 159px;
         padding: 32px 32px 36px 32px;
     }
+}
+a{
+    text-decoration: none;
 }
 .cart:hover{
     transform: scale(1.05);
@@ -208,7 +213,10 @@
     font-weight: 700;
     line-height: 39px;
     margin-top: 16px;
-    
+    text-decoration: none;
+}
+.description-mobile{
+    display: none;
 }
 .description-big{
     height: 237px;
@@ -220,3 +228,7 @@
 .link-to-game{
     cursor: pointer;
 }
+.games__title-mobile{
+    display: none;
+}
+@import "mobile_style";
