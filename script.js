@@ -78,7 +78,7 @@ while(lesson != 0){
         }
         case 10:{
             let name = prompt('Введите ваше имя');
-            let phrase = `Привет, ${name}`;
+            let phrase = `Привет, ${name}!`;
             alert(phrase);
         }
      }
