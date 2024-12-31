@@ -1,85 +1,58 @@
-let lesson = 8;
-
-while(lesson != 0){
-    lesson = Number(prompt('Введите номер задания'));
-    switch(lesson){
-        case 1:{
-            let a = 10;
-            alert(a);
-            a = 20;
-            alert(a);
-            break;
-        }
-        case 2:{
-            let yearPhone = 2007;
-            alert(yearPhone);
-            break;
-        }
-        case 3:{
-            let name = 'Brendan';
-            alert(name);
-            break;
-        }
-        case 4:{
-            let a = 10;
-            let b = 2;
-            alert('a = ' + a + ', b = ' + b +
-                  '\nСумма: ' + (a+b) +
-                  '\nРазность: ' + (a-b) +
-                  '\nПроизведение: ' + (a*b) +
-                  '\nДеление: ' + (a/b)
-            );
-            break;
-        }
-        case 5:{
-            let a = 2;
-            a **= 5;
-            alert(a);
-            break;
-        }
-        case 6:{
-            let a = 9;
-            let b = 2;
-            alert(a%b);
-            break;
-        }
-        case 7:{
-            let num = 1;
-            num += 5;
-            num -= 3;
-            num *= 7;
-            num /= 3;
-            num++;
-            num--;
-            alert(num);
-            break;
-        }
-        case 8:{
-            let age = Number(prompt('Сколько вам лет?'));
-            if (age){
-                if (age == 1){
-                    alert('Вам ' + age + ' год');
-                }
-                else if (age % 10 < 5 && Math.abs(12 - age) > 2){
-                    alert('Вам ' + age + ' года');
-                }
-                else{
-                    alert('Вам ' + age + ' лет');
-                }
-            }
-            break;
-        }
-        case 9:{
-            let user = {
-                "name": 'Andrew',
-                age: 25,
-                isAdmin: true
-            };
-        }
-        case 10:{
-            let name = prompt('Введите ваше имя');
-            let phrase = `Привет, ${name}!`;
-            alert(phrase);
-        }
-     }
+/* 1 задание */
+let a = 10;
+alert(a);
+a = 20;
+alert(a);
+/* 2 задание */
+let yearPhone = 2007;
+alert(yearPhone);
+/* 3 задание */
+let name1 = 'Brendan';
+alert(name1);
+/* 4 задание */
+let a1 = 10;
+let b1 = 2;
+alert('a = ' + a1 + ', b = ' + b1 +
+      '\nСумма: ' + (a1+b1) +
+      '\nРазность: ' + (a1-b1) +
+      '\nПроизведение: ' + (a1*b1) +
+      '\nДеление: ' + (a1/b1));
+/* 5 задание */
+let a2 = 2;
+a2 **= 5;
+alert(a2);
+/* 6 задание */
+let a3 = 9;
+let b3 = 2;
+alert(a3%b3);
+/* 7 задание    */    
+let num = 1;num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
+/* 8 задание */
+let age = Number(prompt('Сколько вам лет?'));
+if (age){
+    if (age == 1){
+        alert('Вам ' + age + ' год');
+    }
+    else if (age % 10 < 5 && Math.abs(12 - age) > 2){
+        alert('Вам ' + age + ' года');
+    }
+    else{
+        alert('Вам ' + age + ' лет');
+    }
 }
+/* 9 задание */
+let user = {
+    "name": 'Andrew',
+    age: 25,
+    isAdmin: true
+};
+/* 10 задание */
+let name = prompt('Введите ваше имя');
+let phrase = `Привет, ${name}!`;
+alert(phrase);
