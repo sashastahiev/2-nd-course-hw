@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 .top {
   width: 100%;
   height: 800px;
@@ -27,7 +35,7 @@
   top: 196px;
 }
 
-.cap__title {
+.header__cap-title {
   width: 768px;
   height: 156px;
   color: rgb(32, 32, 39);
@@ -37,7 +45,7 @@
   line-height: 78px;
 }
 
-.cap__subtitle {
+.header__cap-subtitle {
   display: block;
   width: 720px;
   height: 64px;
@@ -50,7 +58,11 @@
   margin-bottom: 48px;
 }
 
-.cap__btn-go {
+.play-game {
+  display: none;
+}
+
+.header__cap-go {
   width: 247px;
   height: 66px;
   padding: 16px 28px 16px 28px;
@@ -69,7 +81,7 @@
   transition: all 0.3s;
 }
 
-.cap__btn-go:hover {
+.header__cap-go:hover {
   background-color: white;
   color: black;
 }
@@ -110,6 +122,40 @@
   bottom: 225px;
 }
 
+.star-6 {
+  display: none;
+}
+
+.star-7 {
+  position: absolute;
+  width: 584.72px;
+  height: 584.72px;
+  right: -222px;
+  top: 117px;
+  background: rgb(32, 32, 39);
+  z-index: -1;
+}
+
+.star-11 {
+  position: absolute;
+  width: 31.34px;
+  height: 31.34px;
+  left: 27.97px;
+  top: 770px;
+  background: rgb(32, 32, 39);
+  z-index: -1;
+}
+
+.star-12 {
+  position: absolute;
+  width: 54.6px;
+  height: 54.6px;
+  left: 45.18px;
+  top: 822px;
+  background: rgb(32, 32, 39);
+  z-index: -1;
+}
+
 .Big-star {
   position: absolute;
   width: 1074px;
@@ -119,6 +165,7 @@
 }
 
 .games {
+  position: relative;
   width: 1201px;
   height: 1420px;
   margin-left: calc(50% - 600.5px);
@@ -126,7 +173,7 @@
   padding-top: 94px;
 }
 .games__title {
-  width: 314px;
+  width: auto;
   height: 78px;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
@@ -145,8 +192,8 @@
   margin-top: 24px;
 }
 .games__carts {
-  width: 1201px;
-  height: 978px;
+  width: 100%;
+  height: 1088px;
   margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
@@ -154,24 +201,23 @@
 }
 
 .content {
+  position: relative;
   background-image: url("image/background-content.png");
-  width: 100%;
-  height: 1564px;
+  width: auto;
+  height: 4974px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .block {
-  width: 378px;
-  height: 1056px;
+  width: 375px;
+  height: 1088px;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
 }
 
 .cart {
-  position: relative;
   width: 378px;
   height: 473px;
   border-radius: 30px;
@@ -185,24 +231,25 @@
   height: 512px;
 }
 .cart__img {
-  position: absolute;
-  width: 100%;
-  height: 314px;
+  width: 378px;
+  height: auto;
 }
 .cart__description {
-  position: absolute;
-  bottom: 0;
   box-sizing: border-box;
   width: 100%;
   height: 159px;
   padding: 32px 32px 36px 32px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .cart:hover {
   transform: scale(1.05);
 }
 
-.description__game-count {
+.cart__description__game-count {
   width: 108px;
   height: 36px;
   box-sizing: border-box;
@@ -217,7 +264,7 @@
   align-items: center;
 }
 
-.description__title {
+.cart__description__title {
   width: 314px;
   height: 39px;
   color: rgb(32, 32, 39);
@@ -226,6 +273,11 @@
   font-weight: 700;
   line-height: 39px;
   margin-top: 16px;
+  text-decoration: none;
+}
+
+.cart__description__mobile {
+  display: none;
 }
 
 .description-big {
@@ -238,4 +290,291 @@
 
 .link-to-game {
   cursor: pointer;
+}
+
+.games__title-mobile {
+  display: none;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Big-star {
+    display: none;
+  }
+  .content {
+    height: 3774px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .top {
+    width: 100%;
+    height: 700px;
+  }
+  .header {
+    position: relative;
+    width: 375px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .star-1 {
+    display: none;
+  }
+  .star-2 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+  }
+  .star-3 {
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .star-4 {
+    width: 39px;
+    height: 41px;
+    left: 304px;
+    top: 580px;
+  }
+  .star-5 {
+    width: 18px;
+    height: 18px;
+    left: 273px;
+    top: 557px;
+  }
+  .star-6 {
+    display: block;
+    position: absolute;
+    width: 223.52px;
+    height: 238.57px;
+    right: -112.81px;
+    top: -103.61px;
+  }
+  .cart__description__game-count {
+    display: none;
+  }
+  .header__cap {
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 343px;
+    height: 371px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 147px;
+  }
+  .header__cap-title {
+    width: 296px;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__cap-subtitle {
+    width: 296px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+  .header__cap-go {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .games {
+    width: 375px;
+    height: auto;
+    margin-left: calc(50% - 187.5px);
+    margin-right: calc(50% - 187.5px);
+    padding-top: 48px;
+  }
+  .games__description {
+    display: none;
+  }
+  .games__carts {
+    width: 375px;
+    margin-bottom: 24px;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .games__title {
+    display: none;
+  }
+  .games__title-mobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .cart {
+    width: 343px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .cart-2, .cart-4 {
+    margin-bottom: 0;
+  }
+  .cart__img {
+    width: 343px;
+    height: 284.93px;
+  }
+  .cart__description {
+    width: 343px;
+    height: auto;
+    position: relative;
+  }
+  .play-game {
+    display: block;
+    width: 280px;
+    height: 55px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 28px 16px 28px;
+  }
+  .cart__description__mobile {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 28px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .description-big {
+    height: auto;
+  }
+  .cart__description__title {
+    width: 284.93px;
+    height: auto;
+    text-decoration: none;
+    margin-top: 0;
+  }
+  .block {
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .games__mini {
+    display: none;
+  }
+}
+.games__mini {
+  position: relative;
+}
+
+.games__mini__block {
+  width: 100%;
+  min-height: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 32px;
+}
+.games__mini__block-left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.games__mini__block-right {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.games__mini__block__name {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  margin-bottom: 24px;
+}
+.games__mini__block__desc {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 36px;
+}
+.games__mini__block__btn {
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px 28px 16px 28px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.games__mini__block__btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.Granicy {
+  padding: 48px;
+}
+
+.games__mini__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  margin-top: 46px;
+  margin-bottom: 72px;
 }/*# sourceMappingURL=style.css.map */
