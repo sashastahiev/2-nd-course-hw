@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    overflow-x:hidden;
+body{
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
 }
 .top{
     width: 100%;
@@ -27,7 +30,7 @@
         top: 196px;
     }
 }
-.cap__title{
+.header__cap-title{
     width: 768px;
     height: 156px;
     color: rgb(32, 32, 39);
@@ -36,7 +39,7 @@
     font-weight: 700;
     line-height: 78px;
 }
-.cap__subtitle{
+.header__cap-subtitle{
     display: block;
     width: 720px;
     height: 64px;
@@ -51,7 +54,7 @@
 .play-game{
     display: none;
 }
-.cap__btn-go{
+.header__cap-go{
     width: 247px;
     height: 66px;
     padding: 16px 28px 16px 28px;
@@ -69,7 +72,7 @@
     font-weight: 600;
     transition: all 0.3s;
 }
-.cap__btn-go:hover{
+.header__cap-go:hover{
     background-color: white;
     color:black;
 }
@@ -179,10 +182,9 @@
 }
 .content{
     position: relative;
-    z-index: -3;
     background-image: url("image/background-content.png");
     width: auto;
-    height: 5500px;
+    height: 4974px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,7 +225,7 @@ a{
 .cart:hover{
     transform: scale(1.05);
 }
-.description__game-count{
+.cart__description__game-count{
     width: 108px;
     height: 36px;
     box-sizing: border-box;
@@ -237,7 +239,7 @@ a{
     display: flex;
     align-items: center;
 }
-.description__title{
+.cart__description__title{
     width: 314px;
     height: 39px;
     color: rgb(32, 32, 39);
@@ -248,7 +250,7 @@ a{
     margin-top: 16px;
     text-decoration: none;
 }
-.description-mobile{
+.cart__description__mobile{
     display: none;
 }
 .description-big{
