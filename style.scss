@@ -31,7 +31,7 @@ html{
     }
 }
 .header__cap-title{
-    width: 768px;
+    width: 769px;
     height: 156px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -112,31 +112,37 @@ html{
     display: none;
 }
 .star-7{
+    display: block;
     position: absolute;
     width: 584.72px;
     height: 584.72px;
     right:-222px;
     top: 117px;
     background: rgb(32, 32, 39);
-    z-index: -1;
+    z-index: 1;
+    background-color: transparent;
 }
 .star-11{
+    background-color: transparent;
+    z-index: 1000;
+    display: block;
     position: absolute;
     width: 31.34px;
     height: 31.34px;
     left: 27.97px;
     top: 770px;
     background: rgb(32, 32, 39);
-    z-index: -1;
 }
 .star-12{
+    background-color: transparent;
+    z-index: 1000;
+    display: block;
     position: absolute;
     width: 54.6px;
     height: 54.6px;
     left: 45.18px;
     top: 822px;
     background: rgb(32, 32, 39);
-    z-index: -1;
 }
 .Big-star{
     position: absolute;
@@ -194,7 +200,7 @@ html{
     height: 1088px;
     display: flex;
     flex-wrap: wrap;
-    
+    z-index: 100;
 }
 .cart{
     width: 378px;
@@ -225,7 +231,7 @@ a{
 .cart:hover{
     transform: scale(1.05);
 }
-.cart__description__game-count{
+.cart__game-count{
     width: 108px;
     height: 36px;
     box-sizing: border-box;
@@ -239,7 +245,7 @@ a{
     display: flex;
     align-items: center;
 }
-.cart__description__title{
+.cart__title{
     width: 314px;
     height: 39px;
     color: rgb(32, 32, 39);
@@ -250,7 +256,7 @@ a{
     margin-top: 16px;
     text-decoration: none;
 }
-.cart__description__mobile{
+.cart__mobile{
     display: none;
 }
 .description-big{
@@ -265,6 +271,36 @@ a{
 }
 .games__title-mobile{
     display: none;
+}
+.games__name{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.games__desc{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+.games__btn{
+    width: 247px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 28px 16px 28px;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
 }
 .footer{
     background-color:rgb(189, 237, 53);
