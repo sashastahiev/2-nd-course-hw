@@ -1,4 +1,4 @@
-function generateTask() {
+function startGame2() {
     const operators = ['+', '-', '*', '/'];
     const operator = operators[getRandomArbitrary(0, operators.length - 1)];
     const num1 = getRandomArbitrary(1, 20);
@@ -24,10 +24,6 @@ function generateTask() {
             task = `${num1} / ${num2}`;
             break;
     }
-    return { task, answer };
-};
-function startGame2() {
-    const { task, answer } = generateTask();
     const userAnswer = prompt(`Решите задачу: ${task}`);
     if (parseFloat(userAnswer) === answer) {
         alert("Правильно! Ваш ответ верный.");
@@ -35,4 +31,3 @@ function startGame2() {
         alert(`Неправильно. Правильный ответ: ${answer}.`);
     }
 };
-
