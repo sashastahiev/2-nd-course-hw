@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="playGame1.js"></script>
+    <script src="playGame2.js"></script>
 </head>
 <body>
     <section class="top">
@@ -16,7 +18,7 @@
                 <h1 class="header__cap-title">Добро пожаловать &nbsp; на мой сайт мини-игр</h1>
                 <p class="header__cap-subtitle">Тебе предстоит пройти несколько увлекательных игр 
                     Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
-                <button class="header__cap-go">Поехали!</button>
+                <a href="#minigames"><button class="header__cap-go">Поехали!</button></a>
             </div>
             <img class="star-2" src="image/Star-2.png" alt="звезда 2">
             <img class="star-3" src="image/Star-3.png" alt="звезда 3">
@@ -31,24 +33,24 @@
         <img class="star-12" src="image/star-12.png" alt="звезда 12">
         <section class="games">
             <img class="star-7" src="image/star-7.png" alt="звезда 7">
-            <h2 class="games__title">Об играх</h2>
+            <h2 id="minigames" class="games__title">Об играх</h2>
             <h2 class="games__title-mobile">Мини-игры</h2>
             <p class="games__description">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.
                 Все игры доступны для пользования.</p>
             <section class="games__carts">
                 <div class="block">
-                    <a class="link-to-game" href="#">
+                    <a class="link-to-game" href="#game1">
                         <article class="cart cart-1">
                             <img class="cart__img" src="image/pict_game-1.png" alt="игра 1">
-                            <div class="cart__description">
+                            <div  class="cart__description">
                                 <div class="cart__description__game-count">Игра №1</div>
                                 <h3 class="cart__description__title">Угадай число</h3>
                                 <h3 class="cart__description__mobile">Попробуй угадать случайное число от 1 до 100.</h3>
-                                <a href="#" ><button class="play-game">Играть!</button></a>
+                                <button class="play-game">Играть!</button>
                             </div>
                         </article>
                     </a>
-                    <a class="link-to-game" href="#">
+                    <a class="link-to-game" href="#game2">
                         <article class="cart cart-2">
                             <img class="cart__img" src="image/pict_game-4.png" alt="игра 4">
                             <div class="cart__description description-big">
@@ -61,7 +63,7 @@
                     </a>
                 </div>
                 <div class="block">
-                    <a class="link-to-game" href="#">
+                    <a class="link-to-game" href="#game3">
                         <article class="cart cart-3">
                             <img class="cart__img" src="image/pict_game-2.png" alt="игра 2">
                             <div class="cart__description description-medium">
@@ -72,12 +74,12 @@
                             </div>
                         </article>
                     </a>
-                    <a class="link-to-game" href="#">
+                    <a class="link-to-game" href="#game4">
                         <article class="cart cart-4">
                             <img class="cart__img" src="image/pict_game-5.png" alt="игра 5">
                             <div class="cart__description description-medium">
                                 <div class="cart__description__game-count">Игра №5</div>
-                                <h3 class="cart__description__title">Викторина</h3>
+                                <h3 class="cart__description__title">Простая викторина</h3>
                                 <h3 class="cart__description__mobile">Отвечай на вопросы викторины с вариантами ответов.</h3>
                                 <a href="#" ><button class="play-game">Играть!</button></a>
                             </div>
@@ -85,7 +87,7 @@
                     </a>
                 </div>
                 <div class="block">
-                    <a class="link-to-game" href="#">
+                    <a class="link-to-game" href="#game5">
                         <article class="cart cart-5">
                             <img class="cart__img" src="image/pict_game-3.png" alt="игра 3">
                             <div class="cart__description">
@@ -96,7 +98,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="link-to-game" href="#">
+                    <a class="link-to-game" href="#game6">
                         <article class="cart cart-6">
                             <img class="cart__img" src="image/pict_game-6.png" alt="игра 6">
                             <div class="cart__description description-big">
@@ -111,29 +113,29 @@
             </section>
             <section class="games__mini">
                 <h2 class="games__mini__title">Мини-игры</h2>
-                <article class="games__mini__block">
+                <article id="game1" class="games__mini__block">
                     <div class="games__mini__block-left Granicy">
                         <h3 class="games__mini__block__name">Угадай число</h3>
                         <p class="games__mini__block__desc">Попробуй угадать случайное число от 1 до 100.</p>
-                        <button class="games__mini__block__btn">Играть!</button>
+                        <button onclick="startGame1()" class="games__mini__block__btn">Играть!</button>
                     </div>
                     <div class="games__mini__block-right">
                         <img src="image/pict_game-1.png" width="100%" height="100%" alt="игра 1">
                     </div>
                 </article>
 
-                <article class="games__mini__block">
+                <article id="game3" class="games__mini__block">
                     <div class="games__mini__block-left">
                         <img src="image/pict_game-2.png" width="100%" height="100%" alt="игра 2">
                     </div>
                     <div class="games__mini__block-right Granicy">
                         <h3 class="games__mini__block__name">Простая арифметика</h3>
                         <p class="games__mini__block__desc">Попробуй решить простые арифметические задачи.</p>
-                        <button class="games__mini__block__btn">Играть!</button>
+                        <button onclick="startGame2()" class="games__mini__block__btn">Играть!</button>
                     </div>
                 </article>
 
-                <article class="games__mini__block">
+                <article id="game5" class="games__mini__block">
                     <div class="games__mini__block-left Granicy">
                         <h3 class="games__mini__block__name">Переверни текст</h3>
                         <p class="games__mini__block__desc">Попробуй ввести текст, который будет перевернут.</p>
@@ -144,8 +146,8 @@
                     </div>
                 </article>
 
-                <article class="games__mini__block">
-                    <div class="games__mini__block-left">
+                <article id="game2" class="games__mini__block">
+                    <div id="correct1" class="games__mini__block-left">
                         <img src="image/pict_game-4.png" width="100%" height="100%" alt="игра 4">
                     </div>
                     <div class="games__mini__block-right Granicy">
@@ -155,7 +157,7 @@
                     </div>
                 </article>
 
-                <article class="games__mini__block">
+                <article id="game4" class="games__mini__block">
                     <div class="games__mini__block-left Granicy">
                         <h3 class="games__mini__block__name">Викторина</h3>
                         <p class="games__mini__block__desc">Отвечай на вопросы викторины с вариантами ответов.</p>
@@ -166,8 +168,8 @@
                     </div>
                 </article>
 
-                <article class="games__mini__block">
-                    <div class="games__mini__block-left">
+                <article id="game6" class="games__mini__block">
+                    <div id="correct" class="games__mini__block-left">
                         <img src="image/pict_game-6.png" width="100%" height="100%" alt="игра 6">
                     </div>
                     <div class="games__mini__block-right Granicy">
@@ -182,5 +184,6 @@
     <footer class="footer">
         <h1 class="footer__title">Все права защищены</h1>
     </footer>
+    <script src="script_hw6.js"></script>
 </body>
 </html>
