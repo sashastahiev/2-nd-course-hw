@@ -42,7 +42,7 @@ function getRandomInRange(min, max) {
 //Задание 8
 const date8 = new Date();
 console.log(date8);
-
+ 
 //Задание 9
 const date9 = new Date();
 const newDate = new Date(date9.getFullYear(), date9.getMonth(), date9.getDate() + 73);
