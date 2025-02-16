@@ -5,6 +5,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;  
 }
 body{
     overflow-x: hidden;
@@ -119,7 +120,7 @@ body{
     height: 584.72px;
     right:-222px;
     top: 117px;
-    background: rgb(32, 32, 39);
+    background: transparent;
     z-index: 1;
 }
 .star-11{
@@ -128,7 +129,7 @@ body{
     height: 31.34px;
     left: 27.97px;
     top: 770px;
-    background: rgb(32, 32, 39);
+    background: transparent;
     z-index: 1;
 }
 .star-12{
@@ -137,7 +138,7 @@ body{
     height: 54.6px;
     left: 45.18px;
     top: 822px;
-    background: rgb(32, 32, 39);
+    background: transparent;
     z-index: 1;
 }
 .Big-star{
@@ -185,7 +186,7 @@ body{
 }
 .content{
     position: relative;
-    background-image: url("image/background-content.png");
+    background-color: black;
     width: auto;
     height: 4974px;
     background-position: center;
