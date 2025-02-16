@@ -21,7 +21,7 @@ const max = Math.max(...numbers);
 
 //Задание 5
 function getRandomNumber() {
-    const randomNumber = Math.round(Math.random() * 10) + 1;
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
     console.log(randomNumber);
 }
 
@@ -44,10 +44,9 @@ const date8 = new Date();
 console.log(date8);
  
 //Задание 9
-const date9 = new Date();
-const newDate = new Date(date9.getFullYear(), date9.getMonth(), date9.getDate() + 73);
-console.log(date9);
-console.log(newDate);
+const currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
 
 //Задание 10
 function formatDate(date) {
