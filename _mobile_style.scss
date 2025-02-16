@@ -3,7 +3,7 @@
         display: none;
     }
     .content{
-    height: 3774px;
+    height: 3822px;
     }
     body{
         overflow-x: hidden;
@@ -19,6 +19,7 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: start;
 
@@ -58,13 +59,23 @@
         right: -112.81px;
         top: -103.61px;
     }
+    .star-7{
+        z-index: 1;
+    }
+    .star-11{
+        z-index: 1;
+    }
+    .star-12{
+        z-index: 1;
+    }
     .cart__description__game-count{
         display: none;
     }
+    
     .header__cap{
         position: absolute;
-        left:auto;
-        right: auto;
+        left: calc(50% - 171.5px);
+        right: calc(50% - 171.5px); 
         width:343px;
         height: 371px;
         display: flex;
@@ -125,6 +136,7 @@
         padding-right: 16px;
     }
     .cart{
+        z-index: 2;
         width: 343px;
         height: auto;
         margin-bottom: 24px;
@@ -156,6 +168,7 @@
         font-size: 16px;
         font-weight: 600;
         padding: 16px 28px 16px 28px;
+        z-index: 2;
 
     }
     .cart__description__mobile{
@@ -187,7 +200,8 @@
         padding-right: 16px;
         display: flex;
         flex-wrap: wrap;
-       
+        z-index: 2;
+       margin-bottom: 16px;
     }
     .games__mini{
         display: none;
