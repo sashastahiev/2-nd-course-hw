@@ -1,7 +1,7 @@
 .games__mini{
     position: relative;
 }
-.games__mini__block{
+.games__block{
     width: 100%;
     min-height:500px;
     border-radius: 30px;
@@ -51,14 +51,14 @@
         transition: all 0.3s;
     }
 }
-.games__mini__block__btn:hover{
+.games__btn:hover{
     background-color: white;
     color: black;
 }
 .Granicy{
     padding: 48px;
 }
-.games__mini__title{
+.games__title{
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 64px;
